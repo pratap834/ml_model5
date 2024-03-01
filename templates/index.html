@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  h2{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sl{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sw{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .pl{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .pw{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .button_c{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .result{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 220px;
+  }
+  body{
+    background-color: rgb(4, 255, 0);
+  }
+  form {
+    background-color: #177d00; /* Setting the background color for the form */
+    padding: 20px; /* Adding some padding for better readability */
+    border-radius: 10px; /* Adding border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+  }
+
+
+  
+</style>
+<title>Iris Classifier</title>
+</head>
+<body>
+
+<h2>Iris Classifier</h2>
+
+<form action='/predict' method="POST">
+  <div class="sl">
+    <label for="sepal_length">Sepal Length:</label>
+    <input type="number" id="sepal_length" name="sepal_length" min="0" step ="any" required>
+  </div>
+  <div class="sw">
+    <label for="sepal_width">Sepal Width:</label>
+    <input type="number" id="sepal_width" name="sepal_width" min="0" step ="any" required>
+  </div>
+  <div class="pl">
+    <label for="petal_length">Petal Length:</label>
+    <input type="number" id="petal_length" name="petal_length" min="0" step ="any" required>
+  </div>
+  <div class="pw">
+    <label for="petal_width">Petal Width:</label>
+    <input type="number" id="petal_width" name="petal_width" min="0" step ="any" required>
+  </div>
+  <div class="result">
+    Class: {{result}}<br>
+  </div>
+  
+  <div class="button_c">
+    <input type="submit" value="Predict">
+  </div>
+</form>
+
+</body>
+</html>
