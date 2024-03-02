@@ -7,6 +7,9 @@
   h2{
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 10px;
+    text-decoration: double; 
+    font-weight: bold;
   }
   .sl{
     text-align: center;
@@ -34,23 +37,33 @@
     margin-right: 220px;
   }
   body{
-    background-color: rgb(4, 255, 0);
+    background-image: url("https://www.ugaoo.com/cdn/shop/articles/shutterstock_146890418.jpg?v=1661887143");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    font-size: larger;
   }
   form {
-    background-color: #177d00; /* Setting the background color for the form */
+    background-color: rgba(54, 54, 54, 0.622); /* Translucent green color for the form */
     padding: 20px; /* Adding some padding for better readability */
     border-radius: 10px; /* Adding border radius for rounded corners */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    width: 50%; /* Set form width to 50% of the viewport */
+    margin: auto; /* Center the form horizontally */
+  }
+  .result{
+    text-align: center;
+    font-size: x-large;
+    text-shadow: chartreuse;
   }
 
-
-  
 </style>
 <title>Iris Classifier</title>
 </head>
 <body>
 
 <h2>Iris Classifier</h2>
+
 
 <form action='/predict' method="POST">
   <div class="sl">
