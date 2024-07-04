@@ -1,5 +1,1 @@
-Basic Concepts concerning this tasks
-1.Pick a dataset.
-2.Clean and refine the data.
-3.Create a model.
-4.Use the new data and the model for frontend. 
+There are 3 ML models (Iris classifier, House Price prediction and Movie prediction) which were created for Bharat Intern and the Convolutional Neural Network(CNN) is a basic CNN which was created for my familiarity with CNNs.
